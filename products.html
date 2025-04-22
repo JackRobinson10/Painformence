@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painformance™ - Products</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products | Painformance™</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Painformance™</h1>
+    <h2 class="subheader">Peak performance starts where logic ends.</h2>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -19,43 +20,57 @@
   </header>
 
   <main>
-    <section>
-      <h2>Products</h2>
+    <section id="products">
+      <h2>Our Painformance™ Products</h2>
 
-      <div class="product">
-        <h3>BoneFlex™</h3>
-        <img src="images/boneflex.jpg" alt="BoneFlex splint" class="product-img">
-        <p>A flexible splint that holds broken bones in place so you can finish the game. “Doctors say rest, champions say wrap it up and get back out there.”</p>
+      <!-- Product 1: BoneFlex™ -->
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="boneflex.jpg" alt="BoneFlex Splint" />
+          <h4>BoneFlex™ Splint</h4>
+          <p>A flexible splint that holds broken bones in place so you can finish the game. “Doctors say rest, champions say wrap it up and get back out there.”</p>
+          <button onclick="window.location.href='product-details.html'">Learn More</button>
+        </div>
+
+        <!-- Product 2: ACL-astic™ -->
+        <div class="product-card">
+          <img src="acl-astic.jpg" alt="ACL-astic Knee Brace" />
+          <h4>ACL-astic™ Knee Brace</h4>
+          <p>A knee brace made entirely of duct tape. “Who needs ligaments when you have grit?”</p>
+          <button onclick="window.location.href='product-details.html'">Learn More</button>
+        </div>
+
+        <!-- Product 3: TOUGH Spray™ -->
+        <div class="product-card">
+          <img src="tough-spray.jpg" alt="TOUGH Spray" />
+          <h4>TOUGH Spray™</h4>
+          <p>Numbs pain instantly. “Pain is just your body's way of telling you to stop because your body doesn't want you to be the best.”</p>
+          <button onclick="window.location.href='product-details.html'">Learn More</button>
+        </div>
       </div>
 
-      <div class="product">
-        <h3>ACL-astic™</h3>
-        <img src="images/aclastic.jpg" alt="ACL-astic knee brace" class="product-img">
-        <p>A knee brace made entirely of duct tape. “Who needs ligaments when you have grit?”</p>
-      </div>
+      <!-- Product 4: SneakySplintSplints™ -->
+      <div class="product-grid">
+        <div class="product-card">
+          <img src="sneakysplints.jpg" alt="SneakySplintSplints" />
+          <h4>SneakySplintSplints™</h4>
+          <p>Wrap your injury, hide it from officials. “Silence the pain. Literally.”</p>
+          <button onclick="window.location.href='product-details.html'">Learn More</button>
+        </div>
 
-      <div class="product">
-        <h3>TOUGH Spray™</h3>
-        <img src="images/toughspray.jpg" alt="TOUGH Spray can" class="product-img">
-        <p>Numbs pain instantly. “Pain is just your body's way of telling you to stop because your body doesn't want you to be the best.”</p>
-      </div>
-
-      <div class="product">
-        <h3>SneakySplintSplints™</h3>
-        <img src="images/sneakysplint.jpg" alt="SneakySplintSplints" class="product-img">
-        <p>Wrap your injury, hide it from officials. “Silence the pain. Literally.”</p>
-      </div>
-
-      <div class="product">
-        <h3>Manpon™</h3>
-        <img src="images/manpon.jpg" alt="Manpon ear plug" class="product-img">
-        <p>Stops brain-bleed ear gushers in seconds. “Made to look like hearing aids so they can’t kick you out of the game!”</p>
+        <!-- Product 5: Manpon™ -->
+        <div class="product-card">
+          <img src="manpon.jpg" alt="Manpon Ear Plug" />
+          <h4>Manpon™ Ear Plug</h4>
+          <p>Stops brain-bleed ear gushers in seconds. “Made to look like hearing aids so they can’t kick you out of the game!”</p>
+          <button onclick="window.location.href='product-details.html'">Learn More</button>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Painformance™. All Rights Denied.
+    &copy; 2025 Painformance™. All Rights Denied. Embrace the pain.
   </footer>
 </body>
 </html>
