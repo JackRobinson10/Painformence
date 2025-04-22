@@ -1,68 +1,248 @@
+/* Global Styles */
 body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff;
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #eee;
+    padding: 0;
   }
   
   header {
-    background-color: #222;
-    padding: 1rem;
+    background-color: #333; /* Dark gray header */
+    padding: 20px;
     text-align: center;
+    color: #fff;
+  }
+  
+  h1 {
+    font-size: 3em;
+    margin: 0;
+  }
+  
+  h2.subheader {
+    font-size: 1.5em;
+    margin-top: 10px;
+    font-weight: 300;
+  }
+  
+  nav {
+    margin-top: 20px;
   }
   
   nav a {
-    color: #eee;
-    margin: 0 1rem;
+    color: #fff;
+    margin: 0 15px;
     text-decoration: none;
     font-weight: bold;
   }
   
   nav a:hover {
-    color: #ff4136;
-  }
-  
-  main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  h1, h2, h3 {
-    color: #ff4136;
-  }
-  
-  .product, .testimonial, .endorsement {
-    border: 1px solid #444;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    background-color: #1a1a1a;
-  }
-  
-  .product img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 1rem;
+    color: #e60000; /* Red for hover effect */
   }
   
   footer {
     background-color: #222;
+    padding: 20px;
     text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
+    color: #bbb;
+  }
+  
+  /* Section Styles */
+  section {
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  h2, h3 {
+    font-size: 2em;
+    color: #e60000; /* Red color for headings */
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #fff;
+  }
+  
+  /* Pain-O-Meter */
+  #painometer {
+    background-color: #444; /* Dark background for the section */
+    border-radius: 10px;
+  }
+  
+  #painometer input[type="range"] {
     width: 100%;
-    font-size: 0.9rem;
+    margin: 20px 0;
   }
   
-  @media (max-width: 600px) {
-    nav a {
-      display: block;
-      margin: 0.5rem 0;
-    }
-  
-    footer {
-      position: static;
-    }
+  #painometer p {
+    font-size: 1.5em;
+    font-weight: bold;
   }
   
+  #painometer span {
+    font-weight: bold;
+  }
+  
+  #painometer .pain-text {
+    font-size: 1.3em;
+    color: #e60000; /* Red text */
+  }
+  
+  /* Product Layout */
+  #featured-product {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+  }
+  
+  #featured-product img {
+    max-width: 400px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  
+  #featured-product .product-description {
+    max-width: 500px;
+    text-align: left;
+    margin-left: 30px;
+  }
+  
+  #featured-product button {
+    background-color: #e60000;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #featured-product button:hover {
+    background-color: #ffd700;
+    color: #333;
+  }
+  
+  /* Product Cards */
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-card {
+    background-color: #444;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+  }
+  
+  .product-card img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+  }
+  
+  .product-card h4 {
+    font-size: 1.5em;
+    color: #e60000; /* Red color for product names */
+  }
+  
+  .product-card p {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  .product-card button {
+    background-color: #e60000;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-card button:hover {
+    background-color: #ffd700;
+    color: #333;
+  }
+  
+  /* Testimonials & Endorsements Layout */
+  .testimonial-card, .endorsement-card {
+    background-color: #444;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    margin: 20px auto;
+  }
+  
+  .testimonial-card h4, .endorsement-card h4 {
+    font-size: 1.5em;
+    color: #e60000; /* Red color */
+  }
+  
+  .testimonial-card p, .endorsement-card p {
+    font-size: 1em;
+    color: #fff;
+  }
+  
+  .testimonial-card button, .endorsement-card button {
+    background-color: #e60000;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .testimonial-card button:hover, .endorsement-card button:hover {
+    background-color: #ffd700;
+    color: #333;
+  }
+  
+  .content-box {
+    background-color: #222; /* Dark background */
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .content-box h2 {
+    color: #f44336; /* Red for headers */
+    font-size: 24px;
+  }
+  
+  .content-box p {
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .endorsement-box {
+    background-color: #333;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .endorsement-box h3 {
+    color: #f44336; /* Red color for endorsement names */
+    font-size: 20px;
+  }
+  
+  .endorsement-box p {
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 1.6;
+  }

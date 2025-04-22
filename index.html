@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Painformance™ - Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painformance™</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Painformance™</h1>
+    <h2 class="subheader">Peak performance starts where logic ends.</h2>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
@@ -19,15 +20,63 @@
   </header>
 
   <main>
-    <section>
-      <h2>“Peak performance starts where logic ends.” - Jack R.</h2>
-      <p>“PAIN to the max!” - Devon B.</p>
-      <p>Welcome to Painformance™, where only the weak believe in rest and recovery. Our products aren't FDA-approved because we don't need permission to be legendary.</p>
+    <!-- Pain-O-Meter Section -->
+    <section id="painometer">
+      <h2>How Tough Are You?</h2>
+      <input type="range" min="0" max="10" value="5" id="painRange">
+      <p>Your Pain Level: <span id="painValue">5</span>/10</p>
+      <div id="painLevelText" class="pain-text">Welcome to Peak Painformance!</div>
+    </section>
+
+    <section id="featured-product">
+      <h2>Featured Product: TOUGH Spray™</h2>
+      <div class="product-container">
+        <img src="tough-spray.jpg" alt="TOUGH Spray" />
+        <div class="product-description">
+          <p>It's just a numbing spray, but we swear, you'll feel invincible. It's not about fixing injuries—it's about ignoring them.</p>
+          <button onclick="window.location.href='products.html'">See More</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="video">
+      <h2>Painformance™ in Action</h2>
+      <div class="video-container">
+        <video width="100%" controls>
+          <source src="painformance-demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <p>Watch how our athletes power through injuries, because nothing says "champion" like ignoring your body.</p>
+    </section>
+
+    <section id="call-to-action">
+      <h3>Ready to Experience Peak Painformance?</h3>
+      <p>Browse our products and join the movement where performance is pain, and pain is...optional.</p>
+      <button onclick="window.location.href='products.html'">Browse Products</button>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 Painformance™. All Rights Denied.
+    &copy; 2025 Painformance™. All Rights Denied. Embrace the pain.
   </footer>
+
+  <script>
+    const painRange = document.getElementById('painRange');
+    const painValue = document.getElementById('painValue');
+    const painLevelText = document.getElementById('painLevelText');
+
+    painRange.addEventListener('input', () => {
+      painValue.textContent = painRange.value;
+
+      if (painRange.value <= 3) {
+        painLevelText.textContent = "Feeling fine? Just wait till you go harder!";
+      } else if (painRange.value <= 7) {
+        painLevelText.textContent = "You’re tough, but not invincible. Push harder!";
+      } else {
+        painLevelText.textContent = "Pain? Embrace it! You’re in the Painformance zone!";
+      }
+    });
+  </script>
 </body>
 </html>
